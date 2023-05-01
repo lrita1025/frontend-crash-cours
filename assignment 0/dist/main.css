@@ -1,10 +1,193 @@
 /*!************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/scss/all.scss ***!
   \************************************************************************************************************/
-.header-menu {
-  display: flex;
+ul {
+  margin: 0;
 }
 
-.header {
-  color: #2525b1;
+li {
+  list-style: none;
+}
+
+.icon {
+  display: flex;
+  width: 24px;
+  height: 24px;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.header-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  padding: 2.75rem 6rem 2rem 6rem;
+  color: rgba(30, 30, 30, 0.5);
+}
+.header-menu .active {
+  color: #000000;
+}
+
+.nav-menu-main {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  flex: 1;
+}
+.nav-menu-main li {
+  margin-left: 3rem;
+}
+.nav-menu-main .logo {
+  display: flex;
+  width: 142px;
+  height: 39px;
+  margin-right: 3rem;
+  background-image: url(bd881f99f4768ef0e35b.svg);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.nav-option {
+  display: flex;
+  position: relative;
+  flex: 1;
+  justify-content: flex-end;
+}
+.nav-option li {
+  margin-right: 3.25rem;
+  color: rgba(30, 30, 30, 0.5019607843);
+}
+.nav-option li:last-child {
+  margin-right: 0;
+  margin-left: 3.25rem;
+}
+.nav-option .icon--member::after {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 24px;
+  width: 1px;
+  background-color: #000000;
+  margin-left: 4.75rem;
+}
+
+.header-main {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  height: 512px;
+  margin: 0 6rem;
+  background: #C1DCDC;
+  border-radius: 24px;
+  -webkit-border-radius: 24px;
+  -moz-border-radius: 24px;
+  -ms-border-radius: 24px;
+  -o-border-radius: 24px;
+}
+.header-main__info {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.header-main__img {
+  display: flex;
+  flex: 1;
+  position: relative;
+  background-image: url(927d061a35df35a1d0a0.png);
+  background-repeat: no-repeat;
+  background-position: right 30% bottom;
+}
+.header-main__img .main-visual, .header-main__img .header_bg1, .header-main__img .header_bg2 {
+  position: absolute;
+}
+.header-main__img .main-visual {
+  display: flex;
+  align-items: flex-end;
+  bottom: 0;
+  right: 56px;
+}
+.header-main__img .header_bg1 {
+  bottom: 56px;
+  left: 0;
+}
+.header-main__img .header_bg2 {
+  right: 26px;
+  top: 13px;
+}
+.header-main__h1 {
+  margin: 3rem 3rem 1.5rem 3rem;
+  font-weight: 800;
+  font-size: 4rem;
+  font-family: "Poppins";
+}
+.header-main__txt {
+  display: flex;
+  flex-direction: row;
+  font-weight: 500;
+  font-size: 2rem;
+  margin: 0 3rem;
+}
+.header-main__txt p {
+  font-size: 1.125rem;
+  margin: 0.5rem 0;
+}
+.header-main__txt span {
+  position: relative;
+  display: flex;
+  align-items: baseline;
+  flex-direction: column;
+  justify-content: center;
+}
+.header-main__txt span + span {
+  margin-left: 6rem;
+}
+.header-main__txt span + span::before {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 4rem;
+  width: 1px;
+  background-color: #000000;
+  margin-left: -3rem;
+}
+.header-main__search {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 64px;
+  margin: 3rem;
+  background-color: #FFFFFF;
+  border-radius: 0.75rem;
+  position: relative;
+}
+.header-main__search input {
+  width: 100%;
+  padding: 1.125rem;
+  color: rgba(30, 30, 30, 0.5);
+  font-size: 1.125rem;
+  border-radius: 0.75rem;
+  border: 0;
+  -webkit-border-radius: 0.75rem;
+  -moz-border-radius: 0.75rem;
+  -ms-border-radius: 0.75rem;
+  -o-border-radius: 0.75rem;
+}
+.header-main__search .search-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 3rem;
+  height: 3rem;
+  margin-right: 0.5rem;
+  background-color: #C1DCDC;
+  border-radius: 0.75rem;
+  -webkit-border-radius: 0.75rem;
+  -moz-border-radius: 0.75rem;
+  -ms-border-radius: 0.75rem;
+  -o-border-radius: 0.75rem;
 }

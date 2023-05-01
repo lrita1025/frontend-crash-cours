@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel=”stylesheet” href=”https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css”>
+        <link href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css" rel="stylesheet">
         <title>Document</title>
         <link rel="stylesheet" href="dist/main.css" />
        
@@ -12,45 +12,59 @@
     <body>
         <header class="header">
             <div class="header-menu">
-                <div class="logo"></div>
+                
                 <ul class="nav-menu-main">
-                    <li>Home</li>
+                    <div class="logo"></div>
+                    <li class="active">Home</li>
                     <li>Products</li>
                     <li>Contacts</li>
                 </ul>
                 <ul class="nav-option">
                     <li>
                         <i class="icon icon--cart">
-                            <img src="../assignment 0/dist/images/cart.svg" alt="">
+                            <img src="../assignment 0/dist/images/icon/cart.svg" alt="">
                         </i>
                     </li>
                     <li>
                         <i class="icon icon--member">
-                            <img src="../assignment 0/dist/images/member.svg" alt="">
+                            <img src="../assignment 0/dist/images/icon/member.svg" alt="">
                         </i>
                     </li>
                     <li>
                         <i class="icon icon--menu">
-                            <img src="../assignment 0/dist/images/menu.svg" alt="">
+                            <img src="../assignment 0/dist/images/icon/menu.svg" alt="">
                         </i>
                     </li>
                 </ul>
             </div>
             <div class="header-main">
-                <h1 class="header-main__h1">Buy your dream plants</h1>
-                <div class="header-main__txt">
-                    <span>
-                        50+
-                        <p>Plant Species</p>
-                    </span>
-                    <span>
-                        50+
-                        <p>Customers</p>
-                    </span>
+                <div class="header-main__info">
+                    <h1 class="header-main__h1">Buy your <br>dream plants</h1>
+                    <div class="header-main__txt">
+                        <span>
+                            50+
+                            <p>Plant Species</p>
+                        </span>
+                        <span>
+                            100+
+                            <p>Customers</p>
+                        </span>
+                    </div>
+                    <div class="header-main__search">
+                        <input type="text" value="What are you looking for?">
+                        <a href="" class="search-btn"><i class="icon icon--search"><img src="../assignment 0/dist/images/icon/search.svg" alt=""></i></a>
+                    </div>
                 </div>
-                <div class="header-main__search">
-                    <input type="text" value="What are you looking for?">
-                    <a href="" class="search-btn"></a>
+                <div class="header-main__img">
+                    <span class="main-visual">
+                        <img src="../assignment 0/dist/images/img/plant_header.png" alt="">
+                    </span>
+                    <span class="header_bg1">
+                        <img src="../assignment 0/dist/images/img/header_bg1.png" alt="">
+                    </span>
+                    <span class="header_bg2">
+                        <img src="../assignment 0/dist/images/img/header_bg2.png" alt="">
+                    </span>
                 </div>
             </div>
         </header>
