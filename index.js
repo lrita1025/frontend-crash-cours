@@ -27,3 +27,24 @@ reset.addEventListener('click', function() {
   });
 
 updateCounter();
+
+const todoInput = document.querySelector('.todoInput');
+const addItem = document.querySelector('.addItem');
+const todoList = document.querySelector('.todoList');
+
+
+function addTodo() {
+    const todoText = todoInput.value.trim();
+  
+    if (todoText !== '') {
+      const todoItem = document.createElement('div');
+      todoItem.classList.add('todo-item');
+      todoItem.textContent = todoText;
+  
+      todoList.appendChild(todoItem);
+  
+      todoInput.value = '';
+    }
+  }
+  
+  addItem.addEventListener('click', addTodo);
